@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fingerprint Authentication"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/fingerimg"
+        android:layout_below="@id/txt_view"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txt_finger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please your finger on Sensor to access the App"
+        android:textSize="15dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="12dp"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
